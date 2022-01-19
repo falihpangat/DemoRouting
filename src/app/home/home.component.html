@@ -1,0 +1,41 @@
+<div class="jumbotron">
+    <h1 class="display-4">Hello, world!</h1>
+    <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+    <hr class="my-4">
+    <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+    <p class="lead">
+      <button class="btn btn-primary" (click)="Demofunc()">Learn More</button>
+      <button class="btn btn-danger" (click)="ChangeShowUp()">ShowUp</button>
+      <button class="btn btn-danger" (click)="  ChangeShowclose()">closeUp</button>
+    </p>
+  </div>
+  <hr>
+
+  <section *ngIf="IsShowUp">
+    <div class="card" style="width: 18rem;">
+      <img class="card-img-top" src="data:image/png;base64,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" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
+    </div>
+  </section>
+  
+  <hr>
+  
+  <span><h1>{{Name}}</h1></span>
+
+  <hr>
+  <img [src]="ImageUrl" class="rounded mx-auto d-block" alt="...">
+  <hr>
+  <span><h1>{{Name}}</h1></span>
+  <input type="text" placeholder="Enter Somthing" [(ngModel)]="Name">
+  <hr>
+  <app-ruff [headname]="Name"></app-ruff>
+
+
+
+
+
+  <div style="height: 100px;"></div>
